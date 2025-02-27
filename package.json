@@ -1,0 +1,27 @@
+{
+  "name": "studio-sonterra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "dev": "turbo run dev --filter=apps/*",
+    "build": "turbo run build --filter=apps/*",
+    "lint": "turbo run lint --filter=apps/*",
+    "start": "node index.js",
+    "clean": "turbo prune && pnpm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^8.2.0",
+    "turbo": "^2.4.4"
+  },
+  "dependencies": {
+    "@nestjs/graphql": "^13.0.3",
+    "@nestjs/mongoose": "^11.0.1",
+    "@apollo/server": "^4.9.0",
+    "mongoose": "^8.11.0"
+  }
+}
