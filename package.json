@@ -9,6 +9,9 @@
     "build": "turbo run build --filter=apps/*",
     "lint": "turbo run lint --filter=apps/*",
     "start": "node index.js",
+    "start:shop": "turbo run start --filter=shop",
+    "start:admin": "turbo run start --filter=admin",
+    "start:api": "turbo run start --filter=api",
     "clean": "turbo prune && pnpm install"
   },
   "keywords": [],
